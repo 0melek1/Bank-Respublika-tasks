@@ -48,6 +48,8 @@ public class Account {
        this.history = history;
    }
 
+    public Account() {
+    }
 
     Account(String accountNumber, Customer owner){
         this.accountNumber = accountNumber;
@@ -104,6 +106,7 @@ public class Account {
             t.showInfo();
         }
     }
+
 
 
 

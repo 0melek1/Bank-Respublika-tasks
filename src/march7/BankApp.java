@@ -21,6 +21,7 @@ public class BankApp {
 
 
             if(account == null){
+
                     System.out.println("Hesab yoxdur");
                   return;
 
@@ -64,7 +65,6 @@ public class BankApp {
                         case 4:
                         account.showHistory();
                         break;
-
 
                         case 0:
                             running = false;

@@ -7,6 +7,13 @@ public class Transaction {
     private String description;
 
 
+
+    public Transaction(String type, double amount, String description) {
+        this.type = type;
+        this.amount = amount;
+        this.description = description;
+    }
+
     public String getType(){
         return type;
     }
@@ -34,14 +41,9 @@ public class Transaction {
 
 
 
-    public Transaction(String type, double amount, String description) {
-        this.type = type;
-        this.amount = amount;
-        this.description = description;
-    }
 
     void showInfo(){
-        System.out.printf(type,amount,description);
+        System.out.printf(type," ",amount," ",description);
     }
 
 }
